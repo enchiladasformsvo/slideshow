@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Making Enchiladas</title>
+  <title>Changes In Ocean Circulation</title>
   <link rel="icon" href="./kendrick.PNG">
   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./style.css">
@@ -13,14 +13,112 @@
 
 </head>
 <body>
+    <div id="content">
+    <a href="#" class="menu-open-btn"></a>
+      <audio id="JuniorMAFIA" src="/juniormafia.mp3"></audio>
+      <audio id="Ricardo" src="/tsunamisstrike"</audio>
+      <div class="buttonpos">
+          <input class="toggle" onchange="document.getElementById('JuniorMAFIA').play();" type="checkbox" id="switch">
+          <label for="Junior" class="switchLabel">
+          <span class="switchLabelBg"></span>
+    </label>
+</div>
+  </div>
+  <div id="modal-menu">
+    <a href="#" class="menu-close-btn"></a>
+    <ul class="menu-nav">
+
+    </ul>
+  </div>
+</div>
+<style>
+.menu-open-btn {
+  background: url(//qiita-image-store.s3.amazonaws.com/0/48396/56dc0274-0ec5-d10e-16d1-35209ffe0154.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+  background-size: 25px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+
+#modal-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.85);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s ease-out;
+  pointer-events: none;
+}
+
+.menu-nav {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+  transform: translateY(50px);
+  transition: all .5s ease-out;
+}
+
+.menu-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 20px 0;
+  display: block;
+}
+
+.menu-nav a:hover {
+  text-decoration: underline;
+}
+
+.menu-close-btn {
+  background: url(//qiita-image-store.s3.amazonaws.com/0/48396/c90e1498-4813-cf79-8bc3-118456431bc5.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+  background-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body.is-menu-open #modal-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.is-menu-open #content {
+  position: absolute;
+  top:-5px;
+    left:-5px;
+    right:-5px;
+    bottom:-10px;
+  pointer-events: none;
+  transition: all .5s ease-out;
+  -webkit-filter: blur(5px);
+     -moz-filter: blur(5px);
+      -ms-filter: blur(5px);
+          filter: blur(5px);
+    overflow:hidden;
+  width: 100%;
+  transform:scale(1)
+}
+
+body.is-menu-open .menu-nav {
+  transform: translateY(0);
+}
+</style>
 <!-- partial:index.partial.html -->
 <div id="container">
   <ul id="slides">
     <li class="slide">
       <div class="slide-partial slide-left"><img src="./Enchilada-left.JPG"/></div>
       <div class="slide-partial slide-right"><img src="./Enchilada-right.jpg"/></div>
-      <h1 class="title"><span class="title-text">Enchilada Fiesta</span></h1>
-      <p class="sub-title"><span class="subtitle-text">By Ricardo Garcia</span></p>
+      <h1 class="title"><span class="title-text">Changes In Ocean Circulation</span></h1>
+      <p class="sub-title"><span class="subtitle-text">By Ricardo Garcia and Junior M.A.F.I.A</span></p>
     </li>
     <li class="slide">
       <div class="slide-partial slide-left"><img src="./Enchilada-left.JPG"/></div>
